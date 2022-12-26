@@ -9,6 +9,7 @@ module.exports = {
     networks: {
         mumbai: {
             url: process.env.TESTNET_URL_MUMBAI,
+            accounts: [process.env.PRIVATE_KEY],
         },
         etherscan: {
             apiKey: process.env.POLYGONSCAN_API_KEY,
