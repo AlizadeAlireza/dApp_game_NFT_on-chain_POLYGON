@@ -49,4 +49,6 @@ contract ChianBattles is ERC721URIStorage {
             "}"
         );
     }
+
+    function mint() public;
 }
