@@ -5,7 +5,10 @@ require("@nomicfoundation/hardhat-etherscan")
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-    solidity: "0.8.17",
+    solidity: {
+        version: "0.8.17",
+        version: "0.8.0",
+    },
     networks: {
         mumbai: {
             url: process.env.TESTNET_URL_MUMBAI,
