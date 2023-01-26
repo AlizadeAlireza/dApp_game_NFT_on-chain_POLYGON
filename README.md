@@ -30,3 +30,18 @@ This is useful because, even if Solidity is not able to handle images, it is abl
 -   generateCharacter():
 
     for get the SVG file to it and get token id to levelup.
+
+-   getTokenURI():
+
+    for get token uri from IPFS.
+
+-   mint():
+
+    it's for anybody to mint this NFT
+
+    sor first we increment this because the first number of the count is zero.
+    after we get the current value of our tokenID and call \_safeMint function.
+
+    we set tokenIdtoLevels increment equal to zero because we must start with level of zero.
+
+    at the end we call the \_setTokenURI and pass it newItemId and tokenURI that is our getTokenURI function.

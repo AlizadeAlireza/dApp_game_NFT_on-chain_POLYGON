@@ -48,13 +48,15 @@ contract ChianBattles is ERC721URIStorage {
             '"',
             "}"
         );
+
+        return string(abi.encodePacked("data:application/json;base64,", Base64.encode(dataURI)));
     }
 
     function mint() public {
-        _tokenIds.increment();
+        _tokenIds.increment(); // because the original number of count is zero
         uint256 newItemId = _tokenIds.current();
         _safeMint(msg.sender, newItemId);
-        tokenIdtoLevels[newItemId] = 0;
+        tokenIdtoLevels[newItemId] = 0; // start with the level of the zero
         _setTokenURI(newItemId, getTokenURI(newItemId));
     }
 }
