@@ -45,3 +45,12 @@ This is useful because, even if Solidity is not able to handle images, it is abl
     we set tokenIdtoLevels increment equal to zero because we must start with level of zero.
 
     at the end we call the \_setTokenURI and pass it newItemId and tokenURI that is our getTokenURI function.
+
+### most important function
+
+-   train():
+
+    this function take the tokenId and going to change the nft that we interacting with.
+
+    1. we're going to check if the tokenId being supplied exists.
+    2. require the ownerOf.

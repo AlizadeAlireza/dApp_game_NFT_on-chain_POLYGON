@@ -59,4 +59,11 @@ contract ChianBattles is ERC721URIStorage {
         tokenIdtoLevels[newItemId] = 0; // start with the level of the zero
         _setTokenURI(newItemId, getTokenURI(newItemId));
     }
+
+    function train() {
+        require(_exists(tokenId), "please use an existing Token");
+        require(ownerOf(tokenId) == msg.sender, "You must own this token to train it.");
+
+        // after this requires we're going to continue our code.
+    }
 }
