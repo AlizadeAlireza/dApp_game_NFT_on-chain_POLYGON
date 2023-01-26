@@ -54,3 +54,6 @@ This is useful because, even if Solidity is not able to handle images, it is abl
 
     1. we're going to check if the tokenId being supplied exists.
     2. require the ownerOf.
+
+    after this conditions we get the current level of our token and increase it.
+    so we must set the new tokenURI with an existing itemId.

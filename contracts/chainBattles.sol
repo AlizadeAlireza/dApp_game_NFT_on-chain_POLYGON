@@ -66,7 +66,8 @@ contract ChianBattles is ERC721URIStorage {
 
         // after this requires we're going to continue our code.
 
-        uint256 currentLevel = tokenIdtoLevels[tokenId];
-        tokneIdtoLevels[tokenId] = currentWins + 1;
+        uint256 currentLevel = tokenIdtoLevels[tokenId]; // get the current value of tokenId
+        tokneIdtoLevels[tokenId] = currentWins + 1; // increase the tokenId level
+        _setTokenURI(tokenId, getTokenURI(tokenId));
     }
 }
