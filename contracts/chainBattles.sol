@@ -65,5 +65,8 @@ contract ChianBattles is ERC721URIStorage {
         require(ownerOf(tokenId) == msg.sender, "You must own this token to train it.");
 
         // after this requires we're going to continue our code.
+
+        uint256 currentLevel = tokenIdtoLevels[tokenId];
+        tokneIdtoLevels[tokenId] = currentWins + 1;
     }
 }
