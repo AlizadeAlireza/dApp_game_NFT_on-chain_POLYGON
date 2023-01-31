@@ -1,6 +1,6 @@
 const main = async () => {
     try {
-        const nftContractFactory = await hre.ethers.getContractFactory("chainBattles")
+        const nftContractFactory = await hre.ethers.getContractFactory("ChainBattles")
         const nftContract = await nftContractFactory.deploy()
         await nftContract.deployed()
 
