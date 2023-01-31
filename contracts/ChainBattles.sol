@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/utils/Counters.sol"; // for adding some token Id
 import "@openzeppelin/contracts/utils/Strings.sol"; // converting int to str
 import "@openzeppelin/contracts/utils/Base64.sol"; // work with our SVGs
 
-contract ChainBattles is ERC721URIStorage {
+contract ChianBattles is ERC721URIStorage {
     using Strings for uint256;
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
