@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.10;
 
 // imports
 
@@ -60,14 +60,14 @@ contract ChianBattles is ERC721URIStorage {
         _setTokenURI(newItemId, getTokenURI(newItemId));
     }
 
-    function train() {
+    function train(uint256 tokenId) public {
         require(_exists(tokenId), "please use an existing Token");
         require(ownerOf(tokenId) == msg.sender, "You must own this token to train it.");
 
         // after this requires we're going to continue our code.
 
         uint256 currentLevel = tokenIdtoLevels[tokenId]; // get the current value of tokenId
-        tokneIdtoLevels[tokenId] = currentWins + 1; // increase the tokenId level
+        tokenIdtoLevels[tokenId] = currentLevel + 1; // increase the tokenId level
         _setTokenURI(tokenId, getTokenURI(tokenId));
     }
 }
