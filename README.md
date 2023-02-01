@@ -57,3 +57,7 @@ This is useful because, even if Solidity is not able to handle images, it is abl
 
     after this conditions we get the current level of our token and increase it.
     so we must set the new tokenURI with an existing itemId.
+
+### verify contract
+
+    yarn hardhat verify --network mumbai <contract deployed address>
