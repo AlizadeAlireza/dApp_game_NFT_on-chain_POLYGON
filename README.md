@@ -61,3 +61,7 @@ This is useful because, even if Solidity is not able to handle images, it is abl
 ### verify contract
 
     yarn hardhat verify --network mumbai <contract deployed address>
+
+### opensea
+
+it's on https://testnets.opensea.io/assets/mumbai/0xa527b4a312c92fe6d54842eee72ba8a09112ea6b/1
